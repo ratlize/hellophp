@@ -1,0 +1,639 @@
+:root {
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    --tablecell:thead {width;};
+}
+
+html{
+    margin: 0;
+    height: 900px;
+}
+header {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    background-color: cadetblue;
+    width: 80%;
+}
+
+.header_alt {
+    flex-direction: row-reverse;
+}
+
+.title {
+    display: flex;
+    flex-direction: row-reverse;
+    /* margin-left: auto; */
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header img{
+    width: 160px;
+    height: 90px;
+}
+
+main {
+    
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+body > img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    align-content: center;
+    align-items: center;
+    margin: 20px , auto;
+    margin-top: 30px;
+}
+
+.form2{
+    margin-bottom: 30px;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 40%;
+	margin: 1.5em auto 2em;
+	text-align: center;
+}
+
+.date_selecter > h2{
+    display: block;
+    text-align: center;
+    width: 450px;
+    
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+
+@font-face{font-family:"IonIcons";src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");src:url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"),url("//code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");font-weight:normal;font-style:normal}
+
+.pt20{
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.select-wrap:before {
+    z-index: 1;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    content: "\f123";
+    font-family: "IonIcons";
+    line-height: 43px;
+    color: #7F878C;
+    pointer-events: none;
+    
+}
+select{
+    outline:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    background: none transparent;
+    vertical-align: middle;
+    font-size: inherit;
+    color: inherit;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 40px;
+    padding: 8px 12px;
+    border:1px solid #ddd;
+    color:#828c9a;
+    width:30%;
+    border-radius:3px;
+    background-color: white;
+}
+select option{
+  background-color: #fff;
+  color: #333;
+}
+
+.btn h2{
+    text-align: center;
+    height: 30px;
+}
+
+.subbtn {
+    text-align: center;
+    width: 500px;
+    color: blue;
+
+}
+
+.subbtn button {
+    width: 400px;
+    height: 100px;
+    background-color: cyan;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.subbtn  :hover {
+    background-color: #E0FFFF ;
+}
+
+.subbtn #getdate {
+    font-size: 2rem;
+}
+
+.searchPanel {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchPanel > .wrapper {
+    border-radius: 20px ;
+    background-color: #F5F5F5;
+    border-style: ridge;
+    border-color: #F5F5F5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.searchPanel > h2 {
+    text-align: center;
+}
+
+.data {
+    display: flex;
+}
+
+.data p{
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#fx1 {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.time {
+    display: flex;
+}
+
+#fx2 {
+    display: flex;
+    align-items: center;
+}
+
+.searcher {
+    width: 100px;
+    margin-left: 70%;
+    margin-right: 10%;
+}
+
+.searcher input {
+    width: 100px;
+    text-align: center;
+}
+
+.searcher :hover {
+    opacity: 50%;
+}
+
+footer{
+    text-align: center;
+    background-color: cadetblue;
+}
+
+
+#year, #month, #day {
+    width: 80px;
+}
+
+#year1, #year2, #month1, #month2, #day1, #day2 {
+    width: 80px;
+}
+
+#hour1, #hour2 {
+    width: 100px;
+}
+
+#hour {
+    width: 100px;
+}
+
+
+#form1{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin-left: 50px;
+    height: 100%;
+
+}
+
+
+
+@media(max-width:1050px){
+    .data{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .wrapper{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .searchPanel  p{
+        width: 60%;
+        text-align: center;
+    }
+    .form1 {
+        flex-direction: column;
+    }
+    .tbody, .thead {
+        overflow-x: scroll;
+        width: 70%;
+    }
+}
+
+@media(max-width:400px){
+    body{
+        width: 100%;
+    }
+    main {
+        margin: 0 auto;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:1440px){
+    .data{
+        display: flex;
+        flex-direction: column;
+    }
+    .searchPanel{
+        width: 60%;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width:800px){
+    .searchPanel{
+        width: 90%;
+    }
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media(max-width:600px){
+    header{
+        width: 100%;
+    }
+    button{
+        width: 300px;
+    }
+    .btn {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .subbtn{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .subbtn > button{
+        width: 100%;
+    }
+    main{
+        height: 50%;
+
+    }
+}
+@media(max-width:510px){
+    #fx1{
+        margin: 0;
+    }
+    .searcher{
+        margin-left: 60%;
+    }
+    .date_selecter{
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    .btn{
+        margin-bottom: 100px;
+    }
+}
+
+.box {
+    flex-grow: 1;
+}
+
+.box1 {
+    flex-grow: 2;
+}
+
+#sea_stmt{
+    padding-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+#sea_stmt > span{
+    color: blue;
+}
+
+.thead{
+    list-style: none;
+    display: flex;
+    background: #ccc;
+    border:1px solid #aaa;
+    padding:25px 5px;
+    padding: 0;
+    width: 98%;
+    margin-right: 10px;
+    overflow-x: auto;
+}
+
+thead, tbody {
+    display: block;
+}
+
+.tbody {
+    overflow-y: scroll;
+    height: 400px;
+    overflow-x: auto;
+    border-bottom: 2px solid #666;
+    background-color: #EEEEEE ;
+}
+
+th {
+    text-align: center;
+    min-width:100px;
+    border: 1px solid #666;
+    opacity: 1;
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+    margin:0px;
+    padding-left: 0px;
+    background-color: white;
+    overflow-x: auto;
+    width: 100%;
+    flex-basis: auto;
+}
+#link {
+    text-decoration: none;
+    color:black;
+}
+
+h1 :hover{
+    opacity: 0.5;
+}
+
+td {
+    text-align: center;
+    width: 100%;
+    min-width: 100px;
+    border: 1px solid #666;
+    opacity: 1;
+    flex-basis: auto;
+}
+
+#record {
+    text-align: center;
+    vertical-align: middle;
+    margin:0px;
+    width: 99%;
+    padding-left: 0px;
+    background-color: white;
+}
+table{
+    border-collapse: collapse;
+    overflow-x: auto;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+th:hover  {
+    opacity: 0.5;
+    background-color: #EEFFFF;
+}
+
+footer p {
+    margin: 0;
+}
+
+.notfound {
+    text-align: center;
+    font-size: 1.5em;
+    color: red;
+    padding-top: 20px;
+}
+
+#double {
+    font-size: 2rem;
+}
+
+#field {
+    margin: 0 auto;
+}
+
+#blank {
+    height: 20px;
+}
+
+.hmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .searchPanel {
+    margin-right: 20%;
+} */
+
+
+/* .transfer :hover {
+    background-color: rgba(255, 255, 255,0.5);
+} */
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    /* background-color: rgb(112, 233, 233); */
+    margin: 0 auto;
+    height: 100%;
+    align-content: space-around;
+}
+
+
+
+#transfer2 button {
+    background-color: rgb(128, 207, 181);
+    width: 90%;
+    height: 80%;
+    
+}
+
+#transfer2 {
+    margin-left: auto;
+    width: 10%;
+    margin-top: 5px;
+}
+
+#in_transfer {
+    width: 80%;
+    height: 80%;
+}
+#timecodebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color:#F5F5F5 ;
+    border-radius: 6px;
+    width: 73%;
+    margin-top: 5px;
+    border: 1px solid #777777;
+}
+.datebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#ccc {
+    text-align: center;
+}
+.calendar {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#myChart {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.charts {
+    width: 90%;
+    margin: 10px auto;
+}
+
+#data_value{
+    width: 75%;
+}
+.hmenu{
+    height: 60%;
+}
+
+.headmenu{
+    display: flex;
+    width: 80%;
+    margin: 0 auto ;
+    height: 100px;
+
+}
+button > a {
+    font-size: 20px;
+    width: 80%;
+    font-weight: 550;
+}
+
+button > a :hover {
+    color: red;
+}
+#myTable {
+    width: 1000px;
+}
+
+#chartform {
+    z-index: 999;
+    height:200px ;
+}
+#hiduke {
+    display: flex;
+}
+.tablehead{
+    width: 30%;
+}
+
+.tabledata{
+    width: calc(30%);
+}
